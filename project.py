@@ -59,7 +59,7 @@ if query:
             result= chain({"question": query}, return_only_outputs=True)
             
             st.header("Answer")
-            st.subheader(result["answer"])
+            st.write(result["answer"])
             
             sources= result.get("sources", "")
             if sources:
