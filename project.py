@@ -64,3 +64,6 @@ if query:
             sources= result.get("sources", "")
             if sources:
                 st.subheader("Sources:")
+                sources_list = sources.split("\n") 
+                for source in sources_list:
+                    st.write(source)
